@@ -23,4 +23,3 @@ def compare_two_full_names(full_name1, full_name2, first_name_distance=0, last_n
 
     return are_names_equal_with_max_distance(first_name1, first_name2, first_name_distance) and \
            are_names_equal_with_max_distance(last_name1, last_name2, last_name_distance)
-
