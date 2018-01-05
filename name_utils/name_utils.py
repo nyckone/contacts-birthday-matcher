@@ -32,10 +32,10 @@ def compare_two_full_names(full_name1, full_name2, first_name_distance=0, last_n
     last_name2 = parse_full_name(full_name2, LAST_NAME)
 
     return are_names_equal_with_max_distance(first_name1, first_name2, first_name_distance) and \
-           are_names_equal_with_max_distance(last_name1, last_name2, last_name_distance)
+        are_names_equal_with_max_distance(last_name1, last_name2, last_name_distance)
 
 
-def is_either_name_contained(name1, name2):
+def _is_either_name_contained(name1, name2):
     if name1 in name2 or name2 in name1:
         return True
 
@@ -44,9 +44,9 @@ def is_contained_name(name1, name2):
     name1_first_name = get_first_name(name1)
     name2_first_name = get_first_name(name2)
 
-    if is_either_name_contained(name1_first_name, name2_first_name):
+    if _is_either_name_contained(name1_first_name, name2_first_name):
         name1_last_name = get_last_name(name1)
         name2_last_name = get_last_name(name2)
-        return is_either_name_contained(name1_last_name, name2_last_name)
+        return _is_either_name_contained(name1_last_name, name2_last_name)
 
     return False
