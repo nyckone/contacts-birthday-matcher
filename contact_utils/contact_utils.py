@@ -3,7 +3,7 @@ from name_utils import name_utils
 
 def find_contained_contact(contact_dict, exact_name):
     for phone_number, name in contact_dict.iteritems():
-        if name_utils.is_contained_name(name, exact_name):
+        if name_utils.is_contained_name(exact_name, name):
             return phone_number, name
 
     return None
