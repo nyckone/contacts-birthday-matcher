@@ -3,6 +3,8 @@ Input is a json containing dicts of contacts and birthday separated when the key
  and the key to the birthday_dict is "birthday_dict".
  The output is a contact dict with birthdays added
 
+The input json should be Posted to the uploaded url with /get_contacts_with_birthday in order for the outcome to receive
+
 contact_dict is a dict from phone to name, meaning:
 contact_phone -> contact_name
 
