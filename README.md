@@ -1,5 +1,7 @@
-# facebook-contacts-birthday
-Get contacts dict and birthday dict - returns a contact dict with birthday added
+# contacts-birthday_matcher
+Input is a json containing dicts of contacts and birthday separated when the key to the contact_dict is "contact_dict"
+ and the key to the birthday_dict is "birthday_dict".
+ The output is a contact dict with birthdays added
 
 contact_dict is a dict from phone to name, meaning:
 contact_phone -> contact_name
