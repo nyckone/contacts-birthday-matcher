@@ -3,7 +3,6 @@ certifi==2017.11.5
 chardet==3.0.4
 colorama==0.3.9
 Django==1.9.2
-facebook-sdk==2.0.0
 Flask==0.10.1
 funcsigs==1.0.2
 gunicorn==19.7.1
@@ -11,7 +10,7 @@ idna==2.6
 itsdangerous==0.24
 Jinja2==2.8
 MarkupSafe==0.23
-numpy==1.11.3+mkl
+numpy==1.11.3
 pluggy==0.6.0
 py==1.5.2
 pytest==3.3.1
