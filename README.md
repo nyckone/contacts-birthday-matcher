@@ -19,3 +19,9 @@ the exact_name is the name as it appears in the birthday dict - our assumption t
 so the main function signature looks like this:
 ([contact_phone->contact_name], [contact_name->contact_birthday]) ->
 [contact_phone->(contact_name, exact_name, contact_birthday)]
+
+a request can look from the next form:
+curl -H "Content-Type: application/json" -X POST -d
+'{"contact_dict": {"0500000000": "Gabriel Shalom", "0501111111": "James Bond", "0502222222": "Jimmy Kimble"},
+"birthday_dict": {"Gabriel Shalom": "1/1/1990", "Gab Shal": "2/2/1990", "James Bond": "1/1/1991", "Jimmy Kimble": "2/2/1991"}}'
+127.0.0.1:5000/get_contacts_with_birthday
